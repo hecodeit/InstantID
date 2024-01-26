@@ -1,0 +1,10 @@
+- name: Setup Cog
+  # You may pin to the exact commit or the version.
+  # uses: replicate/setup-cog@7ebcc41fa5f808b8558c12a2a3195e0526af7c59
+  uses: replicate/hecodeit
+  with:
+    # If present, this token is used to authenticate to Replicate using `cog login` so you can push your model.
+    token: r8_4DYMeiEweFG63nfFeOZYTwZgDPsT0kg4BgiQV
+    
+- name: Push to Replicate
+  run: cog push r8.im/hecodeit/instant-id
